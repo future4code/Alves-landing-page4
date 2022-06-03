@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-color: #f0f3f7; 
+}
+
+/* Estilização do Cabeçalho */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(218, 229, 232);
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    height: 13vh;
+    margin-right: auto;
+}
+
+.menu-navegacao {
+    display: flex;
+}
+
+.menu-navegacao>a {
+    padding: 100% 10px 100% 10px;
+    margin: auto;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #2E3237;
+    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+
+}
+
+.menu-navegacao>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: 12px;
+    width: 80px;
+}
+
+.login:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* Estilização da main  */
+
+main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh; 
+     
+}
+
+h2 {
+    text-align-last: center;    
+    max-width: 100%;
+}
+
+.bloco1 {
+    display: flex;
+    padding-top: 10px;
+    max-width: 100%;
+    min-width: 320px;
+    margin: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.div1 {
+    max-width: 75%;
+    flex-wrap: wrap;    
+    box-shadow: 5px 5px 5px 5px #000000a0;
+
+}
+
+.div2 {
+    box-shadow: 5px 5px 5px 5px #000000a0;
+    margin-left: 1%;
+}
+
+.bloco2 {
+    max-width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 60px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(218, 229, 232);
+}
+
+.nosso-ambiente, .nossa-historia {
+    max-width: 100%;
+    min-width: 320Px;
+    display: flex;
+    flex-wrap: wrap;    
+    max-width: 45%;    
+    box-shadow: 5px 5px 5px 5px #000000a0;
+}
+
+.bloco2 img {
+    min-width: 800px;
+    min-width: 320px;
+    box-shadow: 5px 5px 5px 5px #000000a0;
+}
+
+.redes-sociais {
+    display: flex;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    flex-direction: column;
+    z-index: 1000;
+    bottom: 15%;
+    right: 0;
+
+}
+
+h4 {
+    margin: 10px;
+    margin-top: 60px;    
+}
+
+.coment {
+    width: 100%;    
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    row-gap: 5%;    
+    flex-direction: row;    
+}
+
+.coment-text {
+    flex-wrap: wrap;
+    max-width: 60%;
+    min-width: 100px;
+    background-color: rgba(218, 229, 232);    
+}
+
+.coment img {
+    box-shadow: 5px 5px 5px 5px #000000a0;
+    max-width: 100%;
+    margin-left: 10%;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(193, 211, 216);
+    text-align: center;
+    padding: 1vh;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(10, 114, 143);
+    color: rgba(218, 229, 232);
+    text-align: center;
+    padding: 1vh;
+    margin: 10px;
+}
+
+.redes-sociais img {
+    max-width: 30%;
+    box-shadow: 1px 1px 1px 1px rgb(194, 164, 224);
+}
+
+
+/* Estilização do Footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(218, 229, 232);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer img {
+    max-width: 5vh;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 450px) and (min-width: 320px){
+
+    header,
+    .menu-navegacao {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .menu-navegacao > a {
+        padding: 10px;
+    }
+
+    .login,
+    .logo {
+        margin: auto;
+    }
+
+    main {
+        margin: auto;
+    }
+    
+    .bloco1 {
+        display: flex;
+        padding-top: 10px;
+        max-width: 100%;
+        min-width: 320px;
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+
+    .div1 {
+        max-width: 75%;
+        flex-wrap: wrap;       
+        margin: auto;               
+    }
+
+    .div2 {        
+        margin-left: 1%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .nosso-ambiente {
+        margin: auto;
+    }
+
+    .nossa-historia {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .coment-text {
+        flex-wrap: wrap;
+        max-width: 60%;
+        min-width: 100px;
+        margin: auto;    
+    }
+
+    .coment img { 
+        max-width: 100%;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
