@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilização do Cabeçalho */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(218, 229, 232);
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    height: 13vh;
+    margin-right: auto;
+}
+
+.menu-navegacao {
+    display: flex;
+}
+
+.menu-navegacao>a {
+    padding: 100% 20px 100% 20px;
+    margin: auto;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #2E3237;
+}
+
+.menu-navegacao>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: 12px;
+    width: 80px;
+}
+
+.login:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* Estilização da main  */
+
+
+
+.sapato2 {
+    width: 50px
+}
+
+/* Estilização do Footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(218, 229, 232);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 450px) {
+
+    header,
+    .menu-navegacao {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .menu-navegacao > a {
+        padding: 10px;
+    }
+
+    .login,
+    .logo {
+        margin: auto;
+    }
+}
+
+/* Grade de produtos */
+
+    .grade {
+        display: flex;
+    
+       
+    }
+
+    .estrutura {
+        margin: -10px 16px 32px -10px;
+    }
+
+    .estrutura > .card {
+        padding: 16px 16px 16px 16px;
+    }
+
+    .card {
+        flex: 1;
+    }
+
+    .card > div{
+        background-color: rgba(218, 229, 232);
+        height: 100%;
+        padding: 10px;
+    }
+
+    .media {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .figura {
+        flex: 1 1 80%;
+        align-self: flex-start;
+    }
+
+    .media-body {
+        flex: 1 1 80%;
+      
+    }
+
+    p {
+        margin: 0 10px 10px 10px;
+       
+    }
+
+    h1 {
+        margin-top:50vh;
+        margin-bottom:50vh;
+        
+        font-size: 32px;
+        text-align: center;
+
+    }
