@@ -34,7 +34,7 @@ header {
     font-size: 1.3rem;
     text-decoration: none;
     color: #2E3237;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
 }
 
 .menu-navegacao>a:hover {
@@ -48,7 +48,7 @@ header {
     width: 120px;
     height: 40px;
     font-size: 16px;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
     box-shadow: 3px 3px 3px 3px #000000a0;
 }
 
@@ -79,7 +79,6 @@ main {
     justify-content: center;
     align-items: center;
     column-gap: 60px;
-    
 }
 
 .chamada img {
@@ -92,18 +91,18 @@ main {
     row-gap: 20px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
     color: #2E3237;
 }
 
 .texto-chamada h1 {
     font-size: 4rem;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
 }
 
 .texto-chamada p {
     font-size: 2rem;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
 }
 
 .infos {
@@ -114,7 +113,7 @@ main {
     align-items: center;
     column-gap: 60px;
     background-color: rgba(218, 229, 232);
-    
+
 }
 
 .texto-infos {
@@ -124,7 +123,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
 
 }
 
@@ -153,10 +152,11 @@ figure {
     justify-content: center;
     align-items: center;
 }
-figcaption {     
+
+figcaption {
     position: absolute;
     font-size: 40px;
-    padding-left: 10px;    
+    padding-left: 10px;
     padding-right: 10px;
     color: black;
     background-color: rgb(255, 255, 255, 0.532);
@@ -184,7 +184,7 @@ figcaption:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
 
 }
 
@@ -201,8 +201,8 @@ figcaption:hover {
     color: #2E3237;
     border: 2px solid black;
     box-shadow: 3px 3px 3px 3px #000000a0;
-    text-shadow: 2px 2px 2px rgba(62,62,62,0.5);
-    cursor: pointer;  
+    text-shadow: 2px 2px 2px rgba(62, 62, 62, 0.5);
+    cursor: pointer;
 }
 
 .orcamento button:hover {
@@ -227,22 +227,81 @@ footer {
 /* Responsividade */
 
 @media screen and (max-width: 450px) {
+    body {
+        max-width: 100vw;
+    }
 
-    header,
-    .menu-navegacao {
-        display: flex;
+    header {
         flex-direction: column;
-        overflow: auto;
         height: auto;
-        padding-bottom: 10px;
+        max-width: 100vw;
     }
 
-    .menu-navegacao > a {
-        padding: 10px;
+    .menu-navegacao {
+        flex-direction: column;
+        width: auto;
+        height: auto;
     }
 
-    .login,
+    .menu-navegacao>a {
+        padding: 4px;
+    }
+
     .logo {
-        margin: auto;
+        margin: -5px auto -10px auto;
+    }
+
+    .login {
+        margin: 3px auto 15px auto;
+        width: 100px;
+        height: 25px;
+    }
+
+    main {
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    img {
+        max-height: 25vh;
+        max-width: 75vw;
+    }
+
+    div,
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto 20px auto;
+    }
+
+    .chamada {
+        margin-bottom: -55px;
+    }
+
+    .texto-chamada h1 {
+        font-size: 3rem;
+    }
+
+    .infos {
+        height: 90vh;
+    }
+
+    .texto-infos {
+        font-size: 1.2rem;
+        max-width: 65%;
+        margin-top: -20px;
+    }
+
+    .orcamento {
+        height: 400px;
+        padding-top: 20px;
+    }
+
+    footer {
+        max-width: 100vw;
+        text-align: center;
+        flex-wrap: wrap;
     }
 }
