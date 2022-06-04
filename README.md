@@ -1,21 +1,25 @@
 # Projeto de Fixação: Landing Page
 ## LINK DO SURGE: https://colossal-reaction.surge.sh/
-### Grupo 4: David Henrique, Klebson Bicalho e Ari Himmelstein 
 
+### Grupo 4: 
+
+David Henrique, Klebson Bicalho e Ari Himmelstein 
 
 ### Infos
 
-**Home:** Idealização e código feito por David Henrique.
+**Home:** feito por David Henrique.
 
-**Quem somos:** Idealização e código feito por Klebson Bicalho.
+**Quem somos:** feito por Klebson Bicalho.
 
-**Produtos:** Idealização e código feito por Ari Himmelstein.
+**Produtos:**  feito por Ari Himmelstein.
 
-**Contato:** Idealização e código feito por David Henrique.
+**Contato:**  feito por David Henrique.
 
-**Redes sociais fixed:** Idealização e código feito por Klebson Bicalho.
+**Redes sociais fixed:**  feito por Klebson Bicalho.
 
 **Responsividade:** Cada um ficou responsável pela sua própria responsividade.
+
+**Header e footer:** feito por David Henrique.
 
 ## Preview Desktop:
 
