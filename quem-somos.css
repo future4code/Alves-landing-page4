@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* body {
+    background-color: #f0f3f7; 
+} */
+
+/* Estilização do Cabeçalho */
+
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(218, 229, 232);
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    height: 13vh;
+    margin-right: auto;
+}
+
+.menu-navegacao {
+    display: flex;
+}
+
+.menu-navegacao>a {
+    padding: 100% 20px 100% 20px;
+    margin: auto;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #2E3237;
+}
+
+.menu-navegacao>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: 12px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px 3px #000000a0;
+}
+
+.login:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+/* Estilização da main  */
+
+main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh; 
+     
+}
+
+h2 {
+    text-align-last: center;    
+    max-width: 100%;
+}
+
+.bloco1 {
+    display: flex;
+    padding-top: 10px;
+    max-width: 100%;
+    min-width: 320px;
+    margin: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.div1 {
+    max-width: 75%;
+    flex-wrap: wrap;    
+    box-shadow: 5px 5px 5px 5px #000000a0;
+
+}
+
+.div2 {
+    box-shadow: 5px 5px 5px 5px #000000a0;
+    margin-left: 1%;
+}
+
+.bloco2 {
+    max-width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 60px;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(218, 229, 232);
+}
+
+.nosso-ambiente, .nossa-historia {
+    max-width: 100%;
+    min-width: 320Px;
+    display: flex;
+    flex-wrap: wrap;    
+    max-width: 45%;    
+    box-shadow: 5px 5px 5px 5px #000000a0;
+}
+
+.bloco2 img {
+    min-width: 800px;
+    min-width: 320px;
+    box-shadow: 5px 5px 5px 5px #000000a0;
+}
+
+.redes-sociais {
+    display: flex;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    z-index: 1000;
+    bottom: 15%;
+    right: 0;
+    
+}
+
+.redes-sociais img {
+    max-width: 30%;
+    box-shadow: 1px 1px 1px 1px rgb(194, 164, 224);
+}
+
+h4 {
+    margin: 10px;
+    margin-top: 60px;    
+}
+
+.coment {
+    width: 100%;    
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    row-gap: 5%;    
+    flex-direction: row;    
+}
+
+.coment-text {
+    flex-wrap: wrap;
+    max-width: 60%;
+    min-width: 100px;
+    background-color: rgba(218, 229, 232);    
+}
+
+.coment img {
+    box-shadow: 5px 5px 5px 5px #000000a0;
+    max-width: 100%;
+    margin-left: 10%;
+}
+
+main button {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(193, 211, 216);
+    text-align: center;
+    padding: 1vh;
+    margin: 10px;
+}
+
+main button:hover {
+    background-color: rgb(10, 114, 143);
+    color: rgba(218, 229, 232);
+    text-align: center;
+    padding: 1vh;
+    margin: 10px;
+}
+
+
+
+/* Estilização do Footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(218, 229, 232);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer img {
+    max-width: 5vh;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 450px) and (min-width: 320px){
+
+    body {
+        max-width: 100vw;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        max-width: 100vw;
+    }
+
+    .menu-navegacao {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .menu-navegacao>a {
+        padding: 4px;
+    }
+
+    .logo {
+        margin: -5px auto -10px auto;
+    }
+
+    .login {
+        margin: 3px auto 15px auto;
+        width: 100px;
+        height: 25px;
+    }
+    
+    main {
+        flex-direction: column;
+        max-width: 100vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto 20px auto;
+    }
+    
+    img {
+        max-height: 25vh;
+        max-width: 75vw;
+    }
+    
+    div,
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto 20px auto;
+        max-width: 100vw;
+    }
+    
+    footer {
+        max-width: 100vw;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .redes-sociais {
+        right: -15px;
+        opacity: 80%;
+    }
+    
+    .bloco1 {
+        display: flex;
+        padding-top: 10px;
+        max-width: 100%;
+        min-width: 320px;
+        margin: 10px;
+        flex-wrap: wrap;
+    }
+
+    .div1 {
+        max-width: 75%;
+        flex-wrap: wrap;       
+        margin: auto;               
+    }
+
+    .div2 {        
+        margin-left: 1%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .nosso-ambiente {
+        margin: auto;
+    }
+
+    .nossa-historia {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .coment-text {
+        flex-wrap: wrap;
+        max-width: 60%;
+        min-width: 100px;
+        margin: auto;    
+    }
+
+    .coment img { 
+        max-width: 100%;
+        margin-top: 20px;
+        margin: auto;
+        row-gap: 0;
+    }
+}
